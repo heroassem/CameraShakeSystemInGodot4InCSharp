@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dj8g4hrlophlx"]
+
+[ext_resource type="Texture2D" uid="uid://br04dnxic4sf" path="res://icon.svg" id="1_e1dnr"]
+[ext_resource type="Script" path="res://Icon.cs" id="2_ppcj6"]
+[ext_resource type="PackedScene" uid="uid://cctfjvjq0xem3" path="res://camer.tscn" id="3_kyhxs"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(304, 113)
+texture = ExtResource("1_e1dnr")
+script = ExtResource("2_ppcj6")
+
+[node name="Camera2D" parent="Icon" instance=ExtResource("3_kyhxs")]
+position = Vector2(147, 102)
